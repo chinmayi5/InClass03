@@ -6,4 +6,54 @@
     android:layout_height="match_parent"
     tools:context="com.example.kchin.inclass03.EditActivity">
 
+    <TextView
+        android:id="@+id/MoodtextView"
+        android:layout_width="155dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginRight="205dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Display Current Mood:"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="164dp"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="162dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="112dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
 </android.support.constraint.ConstraintLayout>

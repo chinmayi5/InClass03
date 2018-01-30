@@ -6,4 +6,190 @@
     android:layout_height="match_parent"
     tools:context="com.example.kchin.inclass03.DisplayActivity">
 
+    <ImageButton
+        android:id="@+id/editnameImageButton"
+        android:layout_width="73dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginStart="258dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginLeft="258dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="EditNameImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_action_edit" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="274dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginLeft="274dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editnameImageButton"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_action_edit" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="289dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginLeft="289dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        app:srcCompat="@drawable/ic_action_edit" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginStart="202dp"
+        android:layout_marginLeft="202dp"
+        android:layout_marginTop="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:layout_constraintVertical_bias="0.193"
+        app:srcCompat="@drawable/ic_action_edit" />
+
+    <TextView
+        android:id="@+id/nameDisplayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginRight="164dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="39dp"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/emailDsplayText"
+        app:layout_constraintEnd_toStartOf="@+id/editnameImageButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DisplayNamebox"
+        android:layout_width="121dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintEnd_toStartOf="@+id/editnameImageButton"
+        app:layout_constraintStart_toEndOf="@+id/nameDisplayText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emailDsplayText"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="121dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="34dp"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/DepartmentDsplayText"
+        app:layout_constraintEnd_toStartOf="@+id/DisplayEmailbox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameDisplayText" />
+
+    <TextView
+        android:id="@+id/DisplayEmailbox"
+        android:layout_width="122dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="73dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/DisplayDeparmentbox"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintStart_toEndOf="@+id/emailDsplayText"
+        app:layout_constraintTop_toBottomOf="@+id/DisplayNamebox" />
+
+    <TextView
+        android:id="@+id/DepartmentDsplayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="107dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="121dp"
+        android:text="Department"
+        app:layout_constraintBottom_toTopOf="@+id/DisplayMoodbox"
+        app:layout_constraintEnd_toStartOf="@+id/DisplayDeparmentbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailDsplayText" />
+
+    <TextView
+        android:id="@+id/DisplayDeparmentbox"
+        android:layout_width="158dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="107dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="73dp"
+        app:layout_constraintBottom_toTopOf="@+id/DisplayMoodbox"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+        app:layout_constraintStart_toEndOf="@+id/DepartmentDsplayText"
+        app:layout_constraintTop_toBottomOf="@+id/emailDsplayText" />
+
+    <TextView
+        android:id="@+id/MoodDisplayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="161dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="110dp"
+        android:text="Mood"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/DisplayMoodbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DepartmentDsplayText" />
+
+    <TextView
+        android:id="@+id/DisplayMoodbox"
+        android:layout_width="184dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="88dp"
+        android:layout_marginTop="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MoodDisplayText"
+        app:layout_constraintTop_toBottomOf="@+id/DepartmentDsplayText" />
+
 </android.support.constraint.ConstraintLayout>
