@@ -5,8 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
+import android.widget.Toast;
 
 public class EditActivity extends AppCompatActivity {
 
@@ -71,7 +73,7 @@ public class EditActivity extends AppCompatActivity {
                 }
             });
 
-            Button button = findViewById(R.id.button2);
+            Button button = findViewById(R.id.button);
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -81,6 +83,47 @@ public class EditActivity extends AppCompatActivity {
                     finish();
                 }
             });
+        }
+
+        else if(type.equals("name")){
+            setContentView(R.layout.activity_edit_name);
+            final EditText nameText = findViewById(R.id.nameUpdate);
+            final String name = nameText.getText().toString();
+
+            Button button = findViewById(R.id.name_save_button);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent response = new Intent();
+                    response.putExtra("name", name);
+                    setResult(RESULT_OK, response);
+                    finish();
+                }
+            });
+        }
+
+        else if(type.equals("email")){
+            setContentView(R.layout.activity_edit_email);
+            final EditText emailText = findViewById(R.id.emailUpdate);
+            final String email = emailText.getText().toString();
+
+            Button button = findViewById(R.id.email_save_button);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent response = new Intent();
+                    response.putExtra("email", email);
+                    setResult(RESULT_OK, response);
+                    finish();
+                }
+            });
+        }
+
+        else {
+            setContentView(R.layout.content_main);
+            Toast toast = Toast.makeText(this, "OOOPS! Something went wrong! Back to Home!", Toast.LENGTH_LONG);
+            toast.show();
+            finish();
         }
 
     }

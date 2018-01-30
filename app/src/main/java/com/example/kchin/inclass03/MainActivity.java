@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 String name = nameText.getText().toString();
-                String email = nameText.getText().toString();
+                String email = emailText.getText().toString();
 
                 Student student = new Student();
                 student.setDepartment(dept[0]);

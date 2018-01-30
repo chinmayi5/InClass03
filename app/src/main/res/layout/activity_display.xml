@@ -14,6 +14,7 @@
         android:layout_marginStart="258dp"
         android:layout_marginTop="16dp"
         android:contentDescription="EditNameImage"
+        android:onClick="nameButtonClicked"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.88"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,6 +30,7 @@
         android:layout_marginEnd="38dp"
         android:layout_marginStart="14dp"
         android:layout_marginTop="22dp"
+        android:onClick="emailButtonClicked"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/DisplayEmailbox"
         app:layout_constraintTop_toBottomOf="@+id/editnameImageButton"
@@ -44,6 +46,7 @@
         android:layout_marginEnd="38dp"
         android:layout_marginStart="289dp"
         android:layout_marginTop="8dp"
+        android:onClick="departmentButtonClicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -171,11 +174,9 @@
         android:id="@+id/DisplayMoodbox"
         android:layout_width="184dp"
         android:layout_height="23dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintEnd_toStartOf="@+id/imageButton8"
-        app:layout_constraintTop_toBottomOf="@+id/DisplayDeparmentbox"
-        android:layout_marginRight="8dp" />
+        app:layout_constraintTop_toBottomOf="@+id/DisplayDeparmentbox" />
 
 </android.support.constraint.ConstraintLayout>
 

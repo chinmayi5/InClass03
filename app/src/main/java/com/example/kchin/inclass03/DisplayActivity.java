@@ -16,6 +16,8 @@ public class DisplayActivity extends AppCompatActivity {
 
     TextView mood;
     TextView department;
+    TextView name;
+    TextView email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +28,8 @@ public class DisplayActivity extends AppCompatActivity {
 
         Log.d("Activity3", "Student Received " + student.toString());
 
-        TextView name = findViewById(R.id.DisplayNamebox);
-        TextView email = findViewById(R.id.DisplayEmailbox);
+        name = findViewById(R.id.DisplayNamebox);
+        email = findViewById(R.id.DisplayEmailbox);
         department = findViewById(R.id.DisplayDeparmentbox);
         mood = findViewById(R.id.DisplayMoodbox);
 
@@ -66,11 +68,17 @@ public class DisplayActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data){
         if(requestCode == REQ_OK){
             if(resultCode == RESULT_OK){
-                String value = data.getStringExtra("mood");
-                String dept = data.getStringExtra("dept");
-                Log.d("Activity3", "Setting mood! " + value);
-                mood.setText(value);
-                department.setText(dept);
+                String moodNew = data.getStringExtra("mood");
+                String deptNew = data.getStringExtra("dept");
+                String nameNew = data.getStringExtra("name");
+                String emailNew = data.getStringExtra("email");
+
+                Log.d("Activity3", nameNew);
+
+                if(moodNew != null && moodNew.length() != 0) mood.setText(moodNew);
+                if(deptNew != null && deptNew.length() != 0) department.setText(deptNew);
+                if(nameNew != null && nameNew.length() != 0) name.setText(nameNew);
+                if(emailNew != null && emailNew.length() != 0) email.setText(emailNew);
             }
         }
 
