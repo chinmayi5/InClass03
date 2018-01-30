@@ -44,4 +44,16 @@ public class Student implements Serializable{
     public void setMood(String mood) {
         this.mood = mood;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", department='" + department + '\'' +
+                ", mood='" + mood + '\'' +
+                '}';
+    }
+
+
 }
