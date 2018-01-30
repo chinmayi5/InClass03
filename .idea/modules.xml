@@ -3,10 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/InClass03.iml" filepath="$PROJECT_DIR$/InClass03.iml" />
-      <module fileurl="file://C:\Dev\InClass03\InClass03.iml" filepath="C:\Dev\InClass03\InClass03.iml" />
       <module fileurl="file://C:\Users\kchin\OneDrive\Documents\GitHub\InClass03\.idea\InClass03.iml" filepath="C:\Users\kchin\OneDrive\Documents\GitHub\InClass03\.idea\InClass03.iml" />
+      <module fileurl="file://C:\Dev\InClass03\InClass03.iml" filepath="C:\Dev\InClass03\InClass03.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Dev\InClass03\app\app.iml" filepath="C:\Dev\InClass03\app\app.iml" />
     </modules>
   </component>
 </project>

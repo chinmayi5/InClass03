@@ -83,25 +83,29 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.d("Activity3", "Printing Student: " + student.toString());
 
+                Log.d("Activity3", "About to check for missing data");
                 if(hasMissingData(student)){
                     Toast toast = Toast.makeText(MainActivity.this, "Sorry but you are missing data!", Toast.LENGTH_LONG);
+                    Log.d("Activity3", "About to show toast");
+                    toast.show();
                 }
 
                 Intent intent = new Intent(MainActivity.this, DisplayActivity.class);
                 intent.putExtra(STUDENT_KEY, student);
+                MainActivity.this.startActivity(intent);
 
             }
         });
     }
 
     protected boolean hasMissingData(Student student){
-        if(student.getDepartment() == ""){
+        if(student.getDepartment() == null || student.getDepartment().length() == 0){
             return true;
-        } else if(student.getEmail() == ""){
+        } else if(student.getEmail() == null || student.getEmail().length() == 0){
             return true;
-        } else if(student.getMood() == ""){
+        } else if(student.getMood() == null){
             return true;
-        } else if(student.getName() == ""){
+        } else if(student.getName() == null){
             return true;
         } else {
             return false;
