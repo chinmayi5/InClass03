@@ -14,6 +14,7 @@ public class DisplayActivity extends AppCompatActivity {
     public static final String DEPT_EDIT = "department";
     public static final String MOOD_EDIT = "mood";
     public static final int REQ_OK = 200;
+    public static final String VALUE_KEY = "value";
     private Student student;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,6 @@ public class DisplayActivity extends AppCompatActivity {
 
         Log.d("Activity3", "Student Received " + student.toString());
 
-        //nameButtonClicked(student);
         TextView name = findViewById(R.id.DisplayNamebox);
         TextView email = findViewById(R.id.DisplayEmailbox);
         TextView department = findViewById(R.id.DisplayDeparmentbox);
@@ -60,6 +60,18 @@ public class DisplayActivity extends AppCompatActivity {
         Intent intent = new Intent("com.example.kchin.inclass03.intent.action.VIEW");
         intent.putExtra(MOOD_EDIT, student.getEmail());
         DisplayActivity.this.startActivityForResult(intent, REQ_OK);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data){
+        if(requestCode == REQ_OK){
+            if(resultCode == RESULT_OK){
+                String value = data.getStringExtra(MOOD_EDIT);
+                Log.d("Activity3", "Setting mood!");
+                student.setMood(value);
+            }
+        }
+
     }
 
 }
